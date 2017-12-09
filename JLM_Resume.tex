@@ -1,0 +1,120 @@
+%-------------------------
+% JLM Resume Template
+% Author: Jason Zhang
+% Written for: JLM Strategic Talent Partners
+%-------------------------
+
+%-------------------------
+% Packages, Preambles, etc.
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[inline]{enumitem}
+\usepackage{tabu}
+
+
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\familydefault}{\sfdefault}
+\thispagestyle{empty}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom Commands
+% skillItem
+% @1: Skill 1 @2: Skill 2
+\newcommand{\skillItem}[2]%
+{%
+    $\bullet$ #1 & $\bullet$ #2 \\ [1mm]%
+}
+
+% skillItemEnd
+% @1: Skill 1 @2: Skill 2
+\newcommand{\skillItemEnd}[2]%
+{%
+    $\bullet$ #1 & $\bullet$ #2%
+}
+
+% newWorkExp
+% @1: Company   @2: Start Date    @3: End Date  @4: Position
+\newcommand{\newWorkExp}[4]%
+{%
+    \vspace{-1mm}%
+    \noindent \textbf{#1 \hfill #2 -- #3} \break%
+    \noindent \emph{#4}%
+}
+
+% workExpItem
+% @1: Description
+\newcommand{\workExpItem}[1]%
+{%
+    \item #1%
+}
+
+% work description begin and end
+\newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-2.5mm}}
+\newcommand{\workExpEnd}{\end{itemize}}
+
+% newEducation
+% @1: School    @2: Start Date   @3: End Date   @4: Degree
+\newcommand{\education}[4]
+{
+    \vspace{-1mm}
+    \noindent \textbf{#1 \hfill #2 -- #3} \break
+    \noindent \emph{#4}
+}
+
+%-------------------------
+% Images Folder
+\graphicspath{images/}
+
+%-------------------------
+% Document begins here.
+\begin{document}
+
+%-------------------------
+% JLM Logo
+\includegraphics[scale=0.5]{images/JLM_Logo.png}
+
+%-------------------------
+% Name
+\begin{center}
+
+
+\end{center}
+
+%-------------------------
+% Skills
+\section{SKILLS}
+    \begin{center}
+    \begin{tabu} to \textwidth { X[c] X[c] }
+
+
+
+    \end{tabu}
+    \end{center}
+
+% \vspace{1mm}
+%-------------------------
+% Work Experience
+\section{WORK EXPERIENCE}
+
+
+
+
+%-------------------------
+% Education
+\section{EDUCATION}
+
+
+
+
+\end{document}
