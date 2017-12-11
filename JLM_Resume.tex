@@ -16,12 +16,36 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage[inline]{enumitem}
 \usepackage{tabu}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{geometry}
 
+\geometry{
+  top=0.5in,
+  inner=0.5in,
+  outer=0.5in,
+  bottom=0.5in,
+  headheight=2ex,
+  headsep=1ex,
+}
 
-\fancyhf{}
-\fancyfoot{}
+\pagestyle{fancy}
+\lhead
+{
+    \includegraphics[scale=0.5]{images/JLM_Logo.png}
+}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand\headrulewidth{0pt}
+\renewcommand\footrulewidth{0pt}
+
+% \fancyhf{}
+% \fancyfoot{}
 \renewcommand{\familydefault}{\sfdefault}
-\thispagestyle{empty}
+% \thispagestyle{empty}
 
 % Sections formatting
 \titleformat{\section}{
@@ -29,18 +53,21 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom Commands
+% Better Bullet Points
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
 % skillItem
 % @1: Skill 1 @2: Skill 2
 \newcommand{\skillItem}[2]%
 {%
-    $\bullet$ #1 & $\bullet$ #2 \\ [1mm]%
+    \tabitem #1 & \tabitem #2 \\ [1mm]%
 }
 
 % skillItemEnd
 % @1: Skill 1 @2: Skill 2
 \newcommand{\skillItemEnd}[2]%
 {%
-    $\bullet$ #1 & $\bullet$ #2%
+    \tabitem #1 & \tabitem #2%
 }
 
 % newWorkExp
@@ -82,12 +109,14 @@
 
 %-------------------------
 % JLM Logo
-\includegraphics[scale=0.5]{images/JLM_Logo.png}
+% \includegraphics[scale=0.5]{images/JLM_Logo.png}
 
 %-------------------------
 % Name
 \begin{center}
+\vspace*{10mm}
 
+\Huge{Jason Yatfai Zhang}
 
 \end{center}
 
@@ -95,10 +124,10 @@
 % Skills
 \section{SKILLS}
     \begin{center}
-    \begin{tabu} to \textwidth { X[c] X[c] }
-
-
-
+    \begin{tabu} to \textwidth { X[l] X[l] }
+        
+        
+        
     \end{tabu}
     \end{center}
 
