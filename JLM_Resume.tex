@@ -20,6 +20,8 @@
 \usepackage{booktabs}
 \usepackage{geometry}
 
+\setlength{\parindent}{0pt}
+
 \geometry{
   top=0.5in,
   inner=0.5in,
@@ -92,11 +94,12 @@
 
 % newEducation
 % @1: School    @2: Start Date   @3: End Date   @4: Degree
-\newcommand{\education}[4]
+\newcommand{\newEducation}[4]
 {
-    \vspace{-1mm}
-    \noindent \textbf{#1 \hfill #2 -- #3} \break
+    \noindent \textbf{#1 \hfill #2 -- #3} \linebreak
     \noindent \emph{#4}
+    \vspace{1mm}
+
 }
 
 %-------------------------
@@ -115,9 +118,9 @@
 % Name
 \begin{center}
 \vspace*{10mm}
-
-\Huge{Jason Yatfai Zhang}
-
+    % NAME GOES HERE
+    
+    
 \end{center}
 
 %-------------------------
@@ -126,8 +129,8 @@
     \begin{center}
     \begin{tabu} to \textwidth { X[l] X[l] }
         % SKILLS CODE HERE
-        
-        
+
+
     \end{tabu}
     \end{center}
 
@@ -138,11 +141,12 @@
     % EXP CODE HERE
 
 
-
 %-------------------------
 % Education
 \section{EDUCATION}
+    \vspace{-1mm}
     % EDU CODE HERE
+
 
 
 \end{document}
