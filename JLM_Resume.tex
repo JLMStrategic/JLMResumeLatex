@@ -77,8 +77,10 @@
 \newcommand{\newWorkExp}[4]%
 {%
     \vspace{-1mm}%
-    \noindent \textbf{#1 \hfill #2 -- #3} \break%
+    \noindent \textbf{#1 \hfill #2 -- #3} \linebreak%
     \noindent \emph{#4}%
+    \vspace{1mm}
+
 }
 
 % workExpItem
@@ -89,7 +91,7 @@
 }
 
 % work description begin and end
-\newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-2.5mm}}
+\newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-5mm}}
 \newcommand{\workExpEnd}{\end{itemize}}
 
 % newEducation
@@ -119,8 +121,8 @@
 \begin{center}
 \vspace*{10mm}
     % NAME CODE HERE
-    
-    
+
+
 \end{center}
 
 %-------------------------
@@ -129,7 +131,6 @@
     \begin{center}
     \begin{tabu} to \textwidth { X[l] X[l] }
         % SKILLS CODE HERE
-
 
     \end{tabu}
     \end{center}
@@ -146,7 +147,6 @@
 \section{EDUCATION}
     \vspace{-1mm}
     % EDU CODE HERE
-
 
 
 \end{document}
