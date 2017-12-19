@@ -70,7 +70,14 @@
 \newcommand{\skillItemEnd}[2]%
 {%
     \tabitem #1 & \tabitem #2%
-}
+}%
+
+% skillOneItemEnd
+% @1: Skill
+\newcommand{\skillOneItemEnd}[1]
+{%
+    \tabitem #1%
+}%
 
 % newWorkExp
 % @1: Company   @2: Start Date    @3: End Date  @4: Position
@@ -131,6 +138,7 @@
     \begin{center}
     \begin{tabu} to \textwidth { X[l] X[l] }
         % SKILLS CODE HERE
+
 
     \end{tabu}
     \end{center}
