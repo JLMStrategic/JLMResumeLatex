@@ -87,8 +87,8 @@
 {%
     \vspace{-1mm}%
     \noindent \textbf{#1 \hfill #2 -- #3} \linebreak%
-    \noindent \emph{#4}%
-    \vspace{1mm}%
+    \noindent \emph{#4} \linebreak%
+    \vspace{1mm}
 }%
 
 % workExpItem
@@ -99,7 +99,7 @@
 }%
 
 % work description begin and end
-\newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-5mm}}
+\newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-8mm}}
 \newcommand{\workExpEnd}{\end{itemize}}
 
 % newEducation
@@ -107,8 +107,7 @@
 \newcommand{\newEducation}[4]
 {%
     \noindent \textbf{#1 \hfill #2 -- #3} \linebreak%
-    \noindent \emph{#4}%
-    \vspace{1mm}%
+    \noindent \emph{#4} \newline%
 }%
 
 % newProject
@@ -122,7 +121,7 @@
 % @1: Project Summary   @2: Project Details
 \newcommand{\projectDescription}[2]%
 {%
-    \begin{itemize}[noitemsep,leftmargin=*] \vspace{-8mm} % label={}
+    \begin{itemize}[noitemsep,leftmargin=*] \vspace{-7mm} % label={}
         \item #1    \vspace{1mm}
         \item #2
     \end{itemize}
