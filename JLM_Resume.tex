@@ -19,7 +19,7 @@
 \usepackage{lipsum}
 \usepackage{booktabs}
 \usepackage{geometry}
-
+\usepackage{listings}
 \setlength{\parindent}{0pt}
 
 \geometry{
@@ -30,6 +30,8 @@
   headheight=2ex,
   headsep=1ex,
 }
+
+\lstset{breaklines=true} 
 
 \pagestyle{fancy}
 \lhead
@@ -86,16 +88,15 @@
     \vspace{-1mm}%
     \noindent \textbf{#1 \hfill #2 -- #3} \linebreak%
     \noindent \emph{#4}%
-    \vspace{1mm}
-
-}
+    \vspace{1mm}%
+}%
 
 % workExpItem
 % @1: Description
 \newcommand{\workExpItem}[1]%
 {%
     \item #1%
-}
+}%
 
 % work description begin and end
 \newcommand{\workExpStart}{\begin{itemize}[noitemsep] \vspace{-5mm}}
@@ -104,12 +105,37 @@
 % newEducation
 % @1: School    @2: Start Date   @3: End Date   @4: Degree
 \newcommand{\newEducation}[4]
-{
-    \noindent \textbf{#1 \hfill #2 -- #3} \linebreak
-    \noindent \emph{#4}
-    \vspace{1mm}
+{%
+    \noindent \textbf{#1 \hfill #2 -- #3} \linebreak%
+    \noindent \emph{#4}%
+    \vspace{1mm}%
+}%
 
-}
+% newProject
+% @1: Project Name    @2: Start Date   @3: End Date
+\newcommand{\newProject}[3]
+{%
+    \noindent \textbf{#1 \hfill #2 -- #3} \break%
+}%
+
+% projectDescription
+% @1: Project Summary   @2: Project Details
+\newcommand{\projectDescription}[2]%
+{%
+    \begin{itemize}[noitemsep,leftmargin=*] \vspace{-8mm} % label={}
+        \item #1    \vspace{1mm}
+        \item #2
+    \end{itemize}
+}%
+
+% newAwardCert list start and end
+\newcommand{\awardCertStart}{\begin{itemize}[noitemsep,leftmargin=*]}
+\newcommand{\awardCertEnd}{\end{itemize}}
+
+% newAwardCert item
+% @1: Award
+\newcommand{\awardCertItem}[1]{\item #1}
+
 
 %-------------------------
 % Images Folder
@@ -148,6 +174,21 @@
 % Work Experience
 \section{WORK EXPERIENCE}
     % EXP CODE HERE
+
+
+%-------------------------
+% Projects (OPTIONAL)
+% PROJECTS CODE HERE
+
+
+%-------------------------
+% Awards (OPTIONAL)
+% AWARDS CODE HERE
+
+
+%-------------------------
+% Certifications (OPTIONAL)
+% CERTIFICATIONS CODE HERE
 
 
 %-------------------------
